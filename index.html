@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="nome"> Nome Completo:</label><br>
+            <input type="text" name="nome" id="inome" required placeholder="seu nome">
+        </p> 
+        <p>
+            <label for="email">Email:</label> <br>
+            <input type="email" name="email" id="iemail" required placeholder="seu e-mail">
+        </p>
+        <p>
+            <label for="idade">Idade:</label><br>
+            <input type="number" name="idade" id="iidade" placeholder="opcional" min="0">
+        </p>  
+        <p>
+            <label for="telefone">Telefone:</label> <br>
+            <input type="tel" name="telefone" id="itelefone" placeholder="DDD + numero" maxlength="11">
+        </p>
+        <p>
+            <label for="curso">Qual curso você fez?</label> <br>
+           <input type="text" name="curso" id="icurso" list="listacurso">
+           <datalist id="listacurso">
+                <option value="" selected>---Escolha--- </option>
+                <option value="PHP"></option>
+                <option value="Java"></option>
+                <option value="HTML"></option>
+                <option value="Python"></option>
+                <option value="Algoritmo"></option>
+                <option value="MySQL"></option>
+           </datalist>
+        </p>
+        <p>
+            <label for="radio">Você recomendaria nossa empresa a amigos?</label><br>
+            <input type="radio" name="radio" id="iradio"> SIM <br>
+            <input type="radio" name="radio" id="iradio"> NÃO <br>
+            <input type="radio" name="radio" id="iradio"> TALVEZ
+        </p> 
+        <p>
+            <label for="satisfaçao">Nivel de satisfação com a empresa</label> <br>
+            <input type="range" name="satisfacao" id="isatisfacao" min="0" max="10" value="10">
+        </p>
+        <fieldset>
+            <legend> O que podemos melhorar?</legend>
+            <input type="checkbox" name="front" id="ifront"> Aulas de Desenvolvimento Front-End <br>
+            <input type="checkbox" name="back" id="iback"> Aulas de Desenvolvimento Back-End <br>
+            <input type="checkbox" name="video" id="ivdideos"> Video aulas <br>
+            <input type="checkbox" name="prof" id="iprof"> Professores <br>
+            <input type="checkbox" name="site" id="isite"> Nosso site <br>
+            <input type="checkbox" name="outro" id="ioutro"> Outros
+        </fieldset>
+        <p>
+            <label for="mensagem">Faça um comentário sobre o que achou da empresa: <br>
+                <textarea name="mensagem" id="imensagem" cols="50" rows="10"></textarea></label>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
