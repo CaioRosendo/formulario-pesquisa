@@ -10,19 +10,15 @@ form {
     background-color: #6EDEE6;
     margin: auto;
     padding: 10px;
-    width: 60vw;
+    width: 70vw;
     border-radius: 10px;
     box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.325);
 } 
 
 input#inome, input#iemail, input#iidade, input#itelefone, input#icurso {
-    width: 40vw; border-radius: 5px;
+    width:30vw; border-radius: 5px;
 }
 
-fieldset {
+fieldset, textarea {
     width: 40vw; border-radius: 5px;
-}
-
-textarea {
-    margin-top: 10px;
 }
